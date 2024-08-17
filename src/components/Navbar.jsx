@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="flex justify-center h-24 items-center">
+        <div className=" flex justify-center h-24 items-center">
             <div className="flex justify-center items-center bg-black w-11/12 md:w-4/5 h-14 border-violet-700 border rounded-full shadow-2xl shadow-violet-700">
                 {/* Desktop Menu */}
                 <motion.ul
@@ -22,7 +22,7 @@ const Navbar = () => {
                         animate={{ y: 0, opacity: 1 }}
                         whileHover={{ scale: 1.2 }}
                         transition={{ ease: "easeInOut", duration: 0.80 }}
-                        className="bg-transparent cursor-pointer my-2 md:my-0"
+                        className="bg-transparent cursor-pointer my-2 md:my-0 "
                     >
                         Home
                     </motion.li>
