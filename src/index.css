@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-bg-image {
+    background-image: url(./assets/globe-1849404.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+}

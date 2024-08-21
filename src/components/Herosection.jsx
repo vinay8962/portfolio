@@ -2,26 +2,64 @@ import React from "react";
 import Profile_BG from "../assets/—Pngtree—twibbon cute gradient colorful avatar_6195826.png";
 import Profile from "../assets/Screenshot 2024-08-18 013513.png";
 import { motion } from "framer-motion";
+import TypingText from "./TypingText";
+import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import { LuContact } from "react-icons/lu";
 
 const Herosection = () => {
+  const handleResumeClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1lTLlyXav1Fz9Y822651KD6eFPV2eC-b3/view?usp=sharing",
+      "_blank"
+    );
+  };
   return (
-    <div className=" flex flex-col md:flex-row w-full min-h-screen">
+    <div className=" flex flex-col md:flex-row w-full h-[650px]">
       <div className="text-white flex-1 flex flex-col items-center justify-center">
-        <h1 className="text-3xl mb-4">I'm</h1>
-        <h1 className="text-4xl font-bold">Vinay Kushwah</h1>
-        <h2 className="text-xl mt-2">Frontend Developer</h2>
+        <h1 className="text-1xl  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
+          <TypingText text="Hello There Welcome To My Portfolio" />
+        </h1>
 
-        <motion.button
-          className="relative mt-4 px-6 py-2 border border-white bg-transparent text-white rounded"
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{
-            duration: 0.5,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
+        <motion.h1
+          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+          className="text-6xl font-semibold font-sans tracking-widest"
         >
-          Show my Resume
-        </motion.button>
+          I<span className="text-red-500">'m</span> Vinay Kushwah
+        </motion.h1>
+        <motion.h2
+          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+          className="text-4xl my-4 tracking-widest text-red-500"
+        >
+          A Frontend Developer
+        </motion.h2>
+
+        <motion.div
+          className="flex gap-3"
+          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
+        >
+          <motion.button
+            className=" flex items-center relative mt-4 px-6 py-2  gap-2 bg-transparent border-red-500 border-2   text-red-500 rounded-full
+             "
+            onClick={handleResumeClick}
+          >
+            Show my Resume <HiOutlineDocumentArrowDown />
+          </motion.button>
+          <motion.button
+            className="relative flex items-center gap-2 mt-4 px-6 py-2 text-white rounded-full 
+                 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
+                 before:absolute before:inset-0 before:rounded-full 
+                 before:bg-transparent before:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+                 before:z-[-1] before:blur-md before:mask border-transparent"
+          >
+            Contact Me <LuContact />
+          </motion.button>
+        </motion.div>
       </div>
       <div className="flex-1 flex items-center justify-center relative ">
         <motion.img
