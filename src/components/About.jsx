@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImage from "../assets/4965791_50426.jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -9,12 +10,31 @@ const About = () => {
 
       {/* Content Layer */}
       <div className="relative z-10 w-full h-full flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-center">
+          <motion.img
+            initial={{ x: -200, opacity: 0, scale: 0.1 }}
+            whileInView={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5 }}
+            src={AboutImage}
+            className="w-72 md:w-8/12 rounded-full shadow-lg"
+            alt="About Vinay Kushwah"
+          />
+        </div>
+
         {/* Text Section */}
-        <div className="w-full md:w-1/2">
-          <h1 className="text-4xl font-bold text-white mb-6 tracking-wide text-center md:text-left">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start">
+          <motion.h1
+            className="text-4xl font-bold text-white mb-6 tracking-wide text-center md:text-left"
+            initial={{ y: -200, opacity: 0, scale: 0.1 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+          >
+            <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
             About Me
-          </h1>
-          <p className="text-white text-lg md:text-xl leading-relaxed tracking-wide text-center md:text-left">
+            <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin ml-4"></span>
+          </motion.h1>
+          <motion.p className="text-white text-lg md:text-xl leading-relaxed tracking-wide text-center md:text-left">
             I hope this message finds you well. My name is Vinay Kushwah, and I
             am a Frontend Developer with 10 months of experience at
             Techieshubhdeep IT Pvt Ltd. During my time with the company, I have
@@ -24,16 +44,7 @@ const About = () => {
             frontend development to your team. Thank you for considering my
             application. I look forward to the possibility of discussing how I
             can contribute to your company.
-          </p>
-        </div>
-
-        {/* Image Section */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <img
-            src={AboutImage}
-            className="w-64 md:w-80 rounded-lg shadow-lg"
-            alt="About Vinay Kushwah"
-          />
+          </motion.p>
         </div>
       </div>
     </div>

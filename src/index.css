@@ -8,3 +8,10 @@
     background-size: cover;
     filter: blur(2px);
 }
+
+.skill-bg-wallpaper {
+    background-image: url(./assets/6372463_3200146.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
