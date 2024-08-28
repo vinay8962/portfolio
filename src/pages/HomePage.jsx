@@ -5,11 +5,15 @@ import Skills from "../components/Skills";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   return (
     <div>
-      <Herosection />
+      <div className="hero-section-bg-image">
+        <Navbar />
+        <Herosection />
+      </div>
       <About />
       <Skills />
       <Project />

@@ -13,8 +13,8 @@ const About = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-center">
           <motion.img
-            initial={{ x: -200, opacity: 0, scale: 0.1 }}
-            whileInView={{ x: 0, opacity: 1, scale: 1 }}
+            initial={{ y: -200, opacity: 0, scale: 0.1 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}
             src={AboutImage}
             className="w-72 md:w-8/12 rounded-full shadow-lg"
@@ -23,18 +23,23 @@ const About = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start overflow-hidden">
           <motion.h1
             className="text-4xl font-bold text-white mb-6 tracking-wide text-center md:text-left"
-            initial={{ y: -200, opacity: 0, scale: 0.1 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            initial={{ x: 300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
           >
             <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
             About Me
             <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin ml-4"></span>
           </motion.h1>
-          <motion.p className="text-white text-lg md:text-xl leading-relaxed tracking-wide text-center md:text-left">
+          <motion.p
+            initial={{ x: 300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            className="text-white text-lg md:text-xl leading-relaxed tracking-wide text-center md:text-left"
+          >
             I hope this message finds you well. My name is Vinay Kushwah, and I
             am a Frontend Developer with 10 months of experience at
             Techieshubhdeep IT Pvt Ltd. During my time with the company, I have

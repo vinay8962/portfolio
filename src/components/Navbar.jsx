@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" flex justify-center h-24 items-center bg-black">
-      <div className="flex justify-center items-center bg-black w-11/12 md:w-4/5 h-14 border-violet-700 border rounded-full shadow-2xl shadow-violet-700">
+    <div className=" flex justify-center h-24 items-center ">
+      <div className="flex justify-center items-center bg-black bg-opacity-70 w-11/12 md:w-4/5 h-14 border-violet-700 border rounded-full shadow-2xl shadow-violet-700">
         {/* Desktop Menu */}
         <motion.ul className="w-4/5 hidden md:flex text-white justify-around items-center">
           <motion.li

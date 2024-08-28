@@ -14,7 +14,7 @@ const Herosection = () => {
     );
   };
   return (
-    <div className=" flex flex-col md:flex-row w-full h-[650px] bg-black">
+    <div className=" flex flex-col md:flex-row w-full h-[650px] ">
       <div className="text-white flex-1 flex flex-col items-center justify-center">
         <h1 className="text-1xl  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
           <TypingText text="Hello There Welcome To My Portfolio" />
