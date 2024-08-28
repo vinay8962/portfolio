@@ -14,7 +14,7 @@ const Herosection = () => {
     );
   };
   return (
-    <div className=" flex flex-col md:flex-row w-full h-[650px]">
+    <div className=" flex flex-col md:flex-row w-full h-[650px] bg-black">
       <div className="text-white flex-1 flex flex-col items-center justify-center">
         <h1 className="text-1xl  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
           <TypingText text="Hello There Welcome To My Portfolio" />
@@ -80,7 +80,7 @@ const Herosection = () => {
         />
       </div>
 
-      <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+      {/* <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div> */}
     </div>
   );
 };

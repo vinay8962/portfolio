@@ -87,7 +87,7 @@ const Skills = () => {
 
   return (
     <div className="w-full h-auto bg-black flex flex-col items-center pt-10 pb-10 skill-bg-wallpaper">
-      <h1 className="text-4xl font-bold text-white tracking-wide mb-8">
+      <h1 className="text-4xl font-bold text-white tracking-wide my-10">
         <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
         Skills{" "}
         <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
