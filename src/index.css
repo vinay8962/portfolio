@@ -24,7 +24,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./assets/space-7039784.png);
+    /* background-image: url(./assets/astronaut-with-spacesuit-practicing-snowboarding-moon.jpg); */
+    background-image: url(./assets/astronaut-space-with-planet-background-removebg.png);
+    background-color: black;
     background-position: center;
     background-size: cover;
     /* filter: blur(2px); */

@@ -52,7 +52,7 @@ const AnimatedProgressBar = ({ value, text, color, delay }) => {
     <motion.div
       ref={ref}
       className="relative w-32 h-32 flex items-center justify-center"
-      initial={{ y: -200, opacity: 0 }}
+      initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: delay / 1000, duration: 1 }} // Convert ms to seconds
     >

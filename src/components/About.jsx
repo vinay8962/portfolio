@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from "../assets/4965791_50426.jpg";
+import AboutImage from "../assets/4965791_50426-removebg-preview.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -13,8 +13,8 @@ const About = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-center">
           <motion.img
-            initial={{ y: -200, opacity: 0, scale: 0.1 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}
             src={AboutImage}
             className="w-72 md:w-8/12 rounded-full shadow-lg"
