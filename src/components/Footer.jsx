@@ -1,5 +1,12 @@
+import { motion } from "framer-motion";
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaDiscord,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,27 +16,50 @@ const Footer = () => {
         &copy; 2024 Your Company. All rights reserved.
       </p>
       <div className="flex space-x-4">
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          initial={{ scale: 1, y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0 }} // No delay for the first icon
+          className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaFacebookF className="text-white hover:text-violet-600" />
-        </a>
-        <a
-          href="https://www.twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          <FaGithub className="text-white" /> {/* GitHub - Black */}
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 1, y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }} // 0.2s delay for the second icon
+          className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaTwitter className="text-white hover:text-violet-600" />
-        </a>
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          <FaDiscord className="text-[#7289DA]" /> {/* Discord - Blue */}
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 1, y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }} // 0.4s delay for the third icon
+          className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaInstagram className="text-white hover:text-violet-600" />
-        </a>
+          <FaLinkedin className="text-[#0A66C2]" /> {/* LinkedIn - Blue */}
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 1, y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6 }} // 0.6s delay for the fourth icon
+          className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
+        >
+          <FaTwitter className="text-[#1DA1F2]" /> {/* Twitter - Blue */}
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 1, y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.3 }} // 0.8s delay for the fifth icon
+          className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
+        >
+          <FaInstagram className="text-[#E1306C]" /> {/* Instagram - Pink */}
+        </motion.div>
       </div>
     </div>
   );

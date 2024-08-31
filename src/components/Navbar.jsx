@@ -31,7 +31,7 @@ const Navbar = () => {
             transition={{ ease: "easeInOut", duration: 1 }}
             className="bg-transparent cursor-pointer my-2 md:my-0"
           >
-            Education
+            About Us
           </motion.li>
           <motion.li
             initial={{ y: -100, opacity: 0, scale: 1 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             Project
           </motion.li>
-          <motion.li
+          {/* <motion.li
             initial={{ y: -100, opacity: 0, scale: 1 }}
             animate={{ y: 0, opacity: 1 }}
             whileHover={{ scale: 1.2 }}
@@ -59,7 +59,7 @@ const Navbar = () => {
             className="bg-transparent cursor-pointer my-2 md:my-0"
           >
             Experience
-          </motion.li>
+          </motion.li> */}
           <motion.li
             initial={{ y: -100, opacity: 0, scale: 1 }}
             animate={{ y: 0, opacity: 1 }}
@@ -120,13 +120,13 @@ const Navbar = () => {
               >
                 Project
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 whileHover={{ scale: 1.2 }}
                 transition={{ ease: "easeInOut", duration: 1.6 }}
                 className="bg-transparent cursor-pointer my-2"
               >
                 Experience
-              </motion.li>
+              </motion.li> */}
               <motion.li
                 whileHover={{ scale: 1.2 }}
                 transition={{ ease: "easeInOut", duration: 1.8 }}
