@@ -38,7 +38,7 @@ const Slide = () => {
   };
 
   return (
-    <div className="slider-container bg-black w-full flex justify-center">
+    <div className="slider-container bg-black w-full flex justify-center ">
       <div className="w-11/12 py-20">
         <Slider {...settings}>
           <div>

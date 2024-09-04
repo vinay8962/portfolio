@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="relative w-full min-h-[500px] py-12 px-6 md:px-12">
       {/* Background Layer */}
-      <div className="absolute inset-0 bg-cover bg-center  z-0 about-bg-image"></div>
+      <div className="absolute inset-0 bg-cover bg-center  z-0 bg-n-8"></div>
 
       {/* Content Layer */}
       <div className="relative z-10 w-full h-full flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">

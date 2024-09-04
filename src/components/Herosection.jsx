@@ -1,10 +1,11 @@
 import React from "react";
-import Profile_BG from "../assets/—Pngtree—twibbon cute gradient colorful avatar_6195826.png";
+import Profile_BG from "../assets/pngegg.png";
 import Profile from "../assets/Screenshot 2024-08-18 013513.png";
 import { motion } from "framer-motion";
 import TypingText from "./TypingText";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import { LuContact } from "react-icons/lu";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Herosection = () => {
   const handleResumeClick = () => {
@@ -44,27 +45,30 @@ const Herosection = () => {
           transition={{ duration: 1.5 }}
         >
           <motion.button
-            className=" flex items-center relative mt-4 px-6 py-2  gap-2 bg-transparent border-red-500 border-2   text-red-500 rounded-full
+            className=" flex items-center relative mt-4 px-6 py-2  gap-2 bg-transparent border-red-500 border-2   text-white rounded-full
              "
             onClick={handleResumeClick}
           >
             Show my Resume <HiOutlineDocumentArrowDown />
           </motion.button>
-          <motion.button
+          <motion.a
+            href="https://wa.me/918962017022"
             className="relative flex items-center gap-2 mt-4 px-6 py-2 text-white rounded-full 
-                 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
-                 before:absolute before:inset-0 before:rounded-full 
-                 before:bg-transparent before:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
-                 before:z-[-1] before:blur-md before:mask border-transparent"
+            bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
+            before:absolute before:inset-0 before:rounded-full 
+            before:bg-transparent before:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+            before:z-[-1] before:blur-md before:mask border-transparent"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Contact Me <LuContact />
-          </motion.button>
+            Contact Me <IoLogoWhatsapp />
+          </motion.a>
         </motion.div>
       </div>
       <div className="flex-1 flex items-center justify-center relative ">
         <motion.img
           src={Profile_BG}
-          className="absolute w-3/4 md:w-2/3 object-cover rounded-full"
+          className="absolute w-3/4 md:w-1/2 object-cover rounded-full"
           alt="Profile Background"
           animate={{ rotate: [0, 360] }}
           transition={{
