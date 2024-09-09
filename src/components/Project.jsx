@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { ProjectData } from "../constants/index"; // Assuming your project data is imported here
 import { RiCloseLargeLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -28,13 +29,18 @@ const Project = () => {
   }, [selectedProject]);
 
   return (
-    <div className="bg-n-8 w-full h-auto py-10">
+    <div className="bg-n-8 w-full h-auto py-10 overflow-hidden">
       <div className="flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-white tracking-wide my-10">
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-          Projects{" "}
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-        </h1>
+        <motion.h1
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          className="text-1xl sm:text-4xl font-bold text-white tracking-wide my-10 text-center"
+        >
+          <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
+          Project{" "}
+          <span className="inline-block sm:w-24 w-12   h-[0.5px] bg-red-500 font-thin"></span>{" "}
+        </motion.h1>
         <p className="text-lg text-gray-500 max-w-4xl text-center mx-4 sm:mx-0">
           As a passionate frontend developer, I have worked on a variety of
           projects that showcase my skills in creating responsive, user-friendly

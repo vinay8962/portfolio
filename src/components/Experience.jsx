@@ -15,13 +15,18 @@ const Experience = () => {
     }),
   };
   return (
-    <div className="bg-n-8 w-full h-auto">
+    <div className="bg-n-8 w-full h-auto overflow-hidden">
       <div className="bg-n-8  flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-white tracking-wide my-10 ">
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin  "></span>{" "}
+        <motion.h1
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          className="text-1xl sm:text-4xl font-bold text-white tracking-wide my-10 text-center"
+        >
+          <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
           Experience{" "}
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-        </h1>
+          <span className="inline-block sm:w-24 w-12   h-[0.5px] bg-red-500 font-thin"></span>{" "}
+        </motion.h1>
       </div>
       <div className="flex flex-col  items-center w-full  px-8">
         <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">

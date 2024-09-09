@@ -15,32 +15,32 @@ const Herosection = () => {
     );
   };
   return (
-    <div className=" flex flex-col md:flex-row w-full h-[650px] ">
-      <div className="text-white flex-1 flex flex-col items-center justify-center">
-        <h1 className="text-1xl  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
+    <div className=" flex flex-col md:flex-row w-full h-[650px]  overflow-hidden ">
+      <div className="text-white flex-1 flex flex-col items-center justify-center m-10">
+        <h1 className="sm:text-1xl text-xs  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
           <TypingText text="Hello There Welcome To My Portfolio" />
         </h1>
 
         <motion.h1
-          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          initial={{ y: -100, opacity: 0, scale: 0.5 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="text-6xl font-semibold font-sans tracking-widest"
+          className="sm:text-6xl text-4xl font-semibold font-sans tracking-widest"
         >
           I<span className="text-red-500">'m</span> Vinay Kushwah
         </motion.h1>
         <motion.h2
-          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          initial={{ y: -100, opacity: 0, scale: 0.5 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="text-4xl my-4 tracking-widest text-red-500"
+          className="sm:text-4xl text-2xl my-4 tracking-widest text-red-500"
         >
           A Frontend Developer
         </motion.h2>
 
         <motion.div
-          className="flex gap-3"
-          initial={{ y: -200, opacity: 0, scale: 0.5 }}
+          className="sm:flex gap-3"
+          initial={{ y: -100, opacity: 0, scale: 0.5 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
@@ -68,7 +68,7 @@ const Herosection = () => {
       <div className="flex-1 flex items-center justify-center relative ">
         <motion.img
           src={Profile_BG}
-          className="absolute w-3/4 md:w-1/2 object-cover rounded-full"
+          className="absolute w-8/12 md:w-1/2 object-cover rounded-full"
           alt="Profile Background"
           animate={{ rotate: [0, 360] }}
           transition={{
@@ -79,12 +79,10 @@ const Herosection = () => {
         />
         <img
           src={Profile}
-          className=" w-32 h-32 md:w-72 md:h-72 rounded-full "
+          className=" w-36 h-36 md:w-72 md:h-72 rounded-full "
           alt="Profile"
         />
       </div>
-
-      {/* <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div> */}
     </div>
   );
 };

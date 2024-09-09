@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="w-full h-auto bg-gradient-to-r from-purple-800  to-black p-4">
+    <div className="w-full h-auto bg-gradient-to-r from-purple-800 to-black p-4 overflow-hidden">
       <div className="flex justify-center ">
         <motion.h1
-          initial={{ x: 300, opacity: 0 }}
+          initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1 }}
-          className="text-4xl font-bold text-white tracking-wide my-10 text-center"
+          className="text-2xl sm:text-4xl font-bold text-white tracking-wide my-6 sm:my-10 text-center"
         >
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
+          <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500"></span>{" "}
           Contact{" "}
-          <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
+          <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500"></span>
         </motion.h1>
       </div>
-      <div className="flex flex-col md:flex-row w-full">
+      <div className="flex flex-col md:flex-row w-full items-center">
         <div className="md:w-2/4 flex justify-center mb-6 md:mb-0">
           <motion.img
             initial={{ opacity: 0, scale: 0.1 }}
@@ -25,7 +25,7 @@ const Contact = () => {
             transition={{ duration: 1.5 }}
             src={ContactImage}
             alt="Contact"
-            className="w-full max-w-sm md:max-w-96"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
         </div>
         <div className="md:w-2/4 flex justify-center items-center">
@@ -34,7 +34,7 @@ const Contact = () => {
             className="text-white w-full max-w-lg px-4 overflow-hidden"
           >
             <motion.div
-              initial={{ x: 300, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1 }}
               className="mb-4"
@@ -50,7 +50,7 @@ const Contact = () => {
               />
             </motion.div>
             <motion.div
-              initial={{ x: 300, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1.4 }}
               className="mb-4"
@@ -66,7 +66,7 @@ const Contact = () => {
               />
             </motion.div>
             <motion.div
-              initial={{ x: 300, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1.8 }}
               className="mb-4"
@@ -78,10 +78,11 @@ const Contact = () => {
                 name="message"
                 id="message"
                 className="bg-transparent border border-white rounded-xl w-full py-2 px-3 focus:border-violet-500 focus:outline-none"
+                rows="5"
               ></textarea>
             </motion.div>
             <motion.button
-              initial={{ x: 300, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 2.2 }}
               whileHover={{ scale: 1.1 }}

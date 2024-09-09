@@ -51,7 +51,7 @@ const AnimatedProgressBar = ({ value, text, color, delay }) => {
   return (
     <motion.div
       ref={ref}
-      className="relative w-32 h-32 flex items-center justify-center"
+      className="relative flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32"
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: delay / 1000, duration: 1 }} // Convert ms to seconds
@@ -65,8 +65,10 @@ const AnimatedProgressBar = ({ value, text, color, delay }) => {
         })}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-white text-lg font-bold">{`${progress}%`}</div>
-        <div className="text-white text-sm font-bold mt-1">{text}</div>
+        <div className="text-white text-base sm:text-lg font-bold">{`${progress}%`}</div>
+        <div className="text-white text-sm sm:text-base font-bold mt-1">
+          {text}
+        </div>
       </div>
     </motion.div>
   );
@@ -86,21 +88,26 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full h-auto bg-black flex flex-col items-center pt-10 pb-10 skill-bg-wallpaper">
-      <h1 className="text-4xl font-bold text-white tracking-wide my-10">
-        <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-        Skills{" "}
-        <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-      </h1>
+    <div className="w-full h-auto bg-black flex flex-col items-center pt-10 pb-10 skill-bg-wallpaper overflow-hidden">
+      <motion.h1
+        initial={{ x: 200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 1 }}
+        className="text-2xl sm:text-4xl font-bold text-white tracking-wide my-6 sm:my-10 text-center"
+      >
+        <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500"></span>{" "}
+        Skill{" "}
+        <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500"></span>
+      </motion.h1>
 
-      <div className="grid grid-cols-5 gap-20">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-12">
         {skills.map((skill, index) => (
           <AnimatedProgressBar
             key={index}
             value={skill.percentage}
             text={skill.name}
             color={skill.color}
-            delay={index * 500} // 0.5-second gap between each skill bar
+            delay={index * 200} // 0.2-second gap between each skill bar
           />
         ))}
       </div>

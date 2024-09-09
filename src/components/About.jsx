@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative w-full min-h-[500px] py-12 px-6 md:px-12">
+    <div className="relative w-full min-h-[500px] py-12 px-6 md:px-12 overflow-hidden">
       {/* Background Layer */}
       <div className="absolute inset-0 bg-cover bg-center  z-0 bg-n-8"></div>
 
@@ -25,20 +25,20 @@ const About = () => {
         {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start overflow-hidden">
           <motion.h1
-            className="text-4xl font-bold text-white mb-6 tracking-wide text-center md:text-left"
-            initial={{ x: 300, opacity: 0 }}
+            className="text-1xl sm:text-4xl font-bold text-white mb-6 tracking-wide text-center md:text-left"
+            initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
           >
-            <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
+            <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500 font-thin"></span>{" "}
             About Me
-            <span className="inline-block w-24 h-[0.5px] bg-red-500 font-thin ml-4"></span>
+            <span className="inline-block w-12 sm:w-24 h-[0.5px] bg-red-500 font-thin "></span>
           </motion.h1>
           <motion.p
-            initial={{ x: 300, opacity: 0 }}
+            initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
-            className="text-white text-lg md:text-xl leading-relaxed tracking-wide text-center md:text-left"
+            className="text-white text-xs md:text-xl leading-relaxed tracking-wide text-center md:text-left"
           >
             I hope this message finds you well. My name is Vinay Kushwah, and I
             am a Frontend Developer with 10 months of experience at

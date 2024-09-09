@@ -28,17 +28,49 @@ const Slide = () => {
     dots: false,
     infinite: true,
     speed: 1500, // Increase speed for smoother transition
-    slidesToShow: 8,
+    slidesToShow: 8, // Default for large screens
     slidesToScroll: 1, // Scrolls one icon at a time for a smooth effect
     autoplay: true,
     autoplaySpeed: 0, // Remove delay between autoplay
     cssEase: "linear", // For smooth continuous scrolling
     pauseOnHover: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1280, // Extra large screens (xl)
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 1024, // Large screens (lg)
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 768, // Medium screens (md)
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 640, // Small screens (sm)
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480, // Very small screens (mobile)
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="slider-container bg-black w-full flex justify-center ">
+    <div className="slider-container bg-black w-full flex justify-center">
       <div className="w-11/12 py-20">
         <Slider {...settings}>
           <div>
