@@ -93,8 +93,7 @@ export const ProjectData = [
     "projectName": "Weather App",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "A simple weather application that fetches data from an open weather API and displays the weather forecast for any location.",
     "githubLink": "https://github.com/username/weather-app",
     "liveLink": "https://weather-app-demo.com"
@@ -104,8 +103,7 @@ export const ProjectData = [
     "projectName": "Task Manager",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "A task management tool that helps users organize and track their daily tasks, with the ability to set reminders and mark tasks as complete.",
     "githubLink": "https://github.com/username/task-manager",
     "liveLink": "https://task-manager-demo.com"
@@ -115,8 +113,7 @@ export const ProjectData = [
     "projectName": "E-commerce Platform",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
     "githubLink": "https://github.com/username/ecommerce-platform",
     "liveLink": "https://ecommerce-platform-demo.com"
@@ -126,8 +123,7 @@ export const ProjectData = [
     "projectName": "Portfolio Website",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "A personal portfolio website to showcase projects and skills. It includes a contact form, project gallery, and resume download.",
     "githubLink": "https://github.com/username/portfolio-website",
     "liveLink": "https://portfolio-website-demo.com"
@@ -137,8 +133,7 @@ export const ProjectData = [
     "projectName": "E-commerce Platform",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
     "githubLink": "https://github.com/username/ecommerce-platform",
     "liveLink": "https://ecommerce-platform-demo.com"
@@ -148,8 +143,7 @@ export const ProjectData = [
     "projectName": "Portfolio Website",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-    "image3": "https://via.placeholder.com/150",
-    "image4": "https://via.placeholder.com/150",
+
     "description": "A personal portfolio website to showcase projects and skills. It includes a contact form, project gallery, and resume download.",
     "githubLink": "https://github.com/username/portfolio-website",
     "liveLink": "https://portfolio-website-demo.com"

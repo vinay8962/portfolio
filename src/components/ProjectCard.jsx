@@ -4,7 +4,7 @@ const ProjectCard = ({ project, onCardClick }) => {
   return (
     <div
       onClick={() => onCardClick(project)}
-      className="relative w-11/12 p-1 h-80 flex justify-center items-center cursor-pointer  overflow-hidden  "
+      className="relative w-11/12 p-[0.8px] h-80 flex justify-center items-center cursor-pointer  overflow-hidden  "
     >
       <motion.span
         animate={{ rotate: 360 }}

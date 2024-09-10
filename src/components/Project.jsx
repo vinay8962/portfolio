@@ -3,6 +3,8 @@ import ProjectCard from "./ProjectCard";
 import { ProjectData } from "../constants/index"; // Assuming your project data is imported here
 import { RiCloseLargeLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+import { FiExternalLink } from "react-icons/fi"; // Import External link icon for live demo
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -49,7 +51,7 @@ const Project = () => {
           React, Tailwind CSS, and more.
         </p>
       </div>
-      <div className="grid w-full grid-cols-1 sm:grid-cols-4 gap-6 px-10 py-10">
+      <div className="grid w-full grid-cols-1 sm:grid-cols-4 gap-6 px-10 py-10 justify-center">
         {ProjectData.map((item) => (
           <ProjectCard
             key={item.id}
@@ -61,15 +63,17 @@ const Project = () => {
 
       {/* Modal for showing project details */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center text-black overflow-hidden ">
-          <div className="bg-gray-500  p-6 rounded-lg max-w-4xl h-auto w-full">
-            <div className="w-full flex justify-end ">
-              <button
+        <div className="fixed inset-0  bg-black bg-opacity-50 flex justify-center items-center text-black overflow-hidden ">
+          <div className="bg-black text-white border border-violet-400  p-6 rounded-lg max-w-4xl h-auto w-full">
+            <div className="w-full flex justify-end  ">
+              <motion.button
                 onClick={handleCloseModal}
                 className="mt-6  text-black  rounded"
+                whileHover={{ rotate: 90 }}
+                transition={{ duration: 1, ease: "easeIn" }}
               >
-                <RiCloseLargeLine size={30} />
-              </button>
+                <RiCloseLargeLine size={30} color="white" />
+              </motion.button>
             </div>
             <h2 className="text-2xl font-bold">
               {selectedProject.projectName}
@@ -78,9 +82,14 @@ const Project = () => {
               <img
                 src={selectedProject.image1}
                 alt={selectedProject.projectName}
-                className="my-4 w-44 h-60"
+                className="my-4 w-72 h-60"
               />
               <img
+                src={selectedProject.image1}
+                alt={selectedProject.projectName}
+                className="my-4 w-72 h-60"
+              />
+              {/* <img
                 src={selectedProject.image1}
                 alt={selectedProject.projectName}
                 className="my-4 w-44 h-60"
@@ -89,31 +98,26 @@ const Project = () => {
                 src={selectedProject.image1}
                 alt={selectedProject.projectName}
                 className="my-4 w-44 h-60"
-              />
-              <img
-                src={selectedProject.image1}
-                alt={selectedProject.projectName}
-                className="my-4 w-44 h-60"
-              />
+              /> */}
             </div>
             <p>{selectedProject.description}</p>
-            <div className="mt-4">
+            <div className="mt-4 flex ">
               <a
                 href={selectedProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                className="text-blue-500 flex items-center"
               >
-                GitHub
+                <FaGithub className="mr-2" /> GitHub
               </a>
               <span className="mx-4">|</span>
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                className="text-red-500 flex items-center"
               >
-                Live Demo
+                <FiExternalLink className="mr-2" /> Live Demo
               </a>
             </div>
           </div>
