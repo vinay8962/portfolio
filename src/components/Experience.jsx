@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const experiences = [
+  {
+    company: "Techieshubhdeep IT Pvt Ltd",
+    role: "Frontend Developer",
+    start: "Sept. 2023",
+    end: "Jun 2024",
+    description:
+      "Developed and maintained features for a school management system, worked on an e-commerce website, contributed to the company website, and collaborated with cross-functional teams.",
+  },
+];
+
 const Experience = () => {
   // Variants for the motion cards
   const cardVariants = {
@@ -14,9 +25,10 @@ const Experience = () => {
       },
     }),
   };
+
   return (
     <div className="bg-n-8 w-full h-auto overflow-hidden">
-      <div className="bg-n-8  flex flex-col items-center">
+      <div className="bg-n-8 flex flex-col items-center">
         <motion.h1
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -25,10 +37,10 @@ const Experience = () => {
         >
           <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
           Experience{" "}
-          <span className="inline-block sm:w-24 w-12   h-[0.5px] bg-red-500 font-thin"></span>{" "}
+          <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
         </motion.h1>
       </div>
-      <div className="flex flex-col  items-center w-full  px-8">
+      <div className="flex flex-col items-center w-full px-8">
         <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
           Working Since 2023
         </p>
@@ -38,7 +50,40 @@ const Experience = () => {
         </p>
       </div>
 
-      {/* <section className="bg-n-8">
+      <div className="flex flex-col items-center w-full px-8">
+        {experiences.map((exp, i) => (
+          <motion.div
+            key={i}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
+            className="border border-n-1/15 shadow-2xl shadow-n-1/15 p-6 rounded-lg shadow-md text-n-4 mb-8 w-full max-w-4xl"
+          >
+            <div className="flex justify-between">
+              <div>
+                {" "}
+                <h2 className="text-2xl font-bold mb-2 text-gray-300">
+                  {exp.company}
+                </h2>
+                <h3 className="text-xl font-medium mb-2">{exp.role}</h3>
+              </div>
+              <p className="text-sm mb-2">
+                {exp.start} - {exp.end}
+              </p>
+            </div>
+            <p className="text-n-4 text-center">{exp.description}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
+
+{
+  /* <section className="bg-n-8">
         <div className="text-white py-8">
           <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:mb-24">
             <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
@@ -224,9 +269,5 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </section> */}
-    </div>
-  );
-};
-
-export default Experience;
+      </section> */
+}

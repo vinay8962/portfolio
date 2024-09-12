@@ -63,12 +63,12 @@ const Project = () => {
 
       {/* Modal for showing project details */}
       {selectedProject && (
-        <div className="fixed inset-0  bg-black bg-opacity-50 flex justify-center items-center text-black overflow-hidden ">
-          <div className="bg-black text-white border border-violet-400  p-6 rounded-lg max-w-4xl h-auto w-full">
-            <div className="w-full flex justify-end  ">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center text-black overflow-hidden">
+          <div className="bg-black text-white border border-violet-400 p-6 rounded-lg max-w-4xl h-auto w-full">
+            <div className="w-full flex justify-end">
               <motion.button
                 onClick={handleCloseModal}
-                className="mt-6  text-black  rounded"
+                className="mt-6 text-black rounded"
                 whileHover={{ rotate: 90 }}
                 transition={{ duration: 1, ease: "easeIn" }}
               >
@@ -85,23 +85,29 @@ const Project = () => {
                 className="my-4 w-72 h-60"
               />
               <img
-                src={selectedProject.image1}
+                src={selectedProject.image2}
                 alt={selectedProject.projectName}
                 className="my-4 w-72 h-60"
               />
-              {/* <img
-                src={selectedProject.image1}
-                alt={selectedProject.projectName}
-                className="my-4 w-44 h-60"
-              />
-              <img
-                src={selectedProject.image1}
-                alt={selectedProject.projectName}
-                className="my-4 w-44 h-60"
-              /> */}
             </div>
             <p>{selectedProject.description}</p>
-            <div className="mt-4 flex ">
+
+            {/* New section for language/technologies */}
+            <div className="mt-4">
+              <h3 className="text-xl font-semibold">Technologies Used:</h3>
+              <ul className="list-disc ml-5 flex mt-2">
+                {selectedProject.language.map((tech, index) => (
+                  <li
+                    key={index}
+                    className="text-xs text-n-2 px-2 py-[2px] list-none border border-white rounded-full  mx-2"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-4 flex">
               <a
                 href={selectedProject.githubLink}
                 target="_blank"

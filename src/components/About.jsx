@@ -40,15 +40,14 @@ const About = () => {
             transition={{ ease: "easeOut", duration: 1.5 }}
             className="text-white text-xs md:text-xl leading-relaxed tracking-wide text-center md:text-left"
           >
-            I hope this message finds you well. My name is Vinay Kushwah, and I
-            am a Frontend Developer with 10 months of experience at
-            Techieshubhdeep IT Pvt Ltd. During my time with the company, I have
-            worked on a variety of projects that have honed my skills in
-            frontend development. I am currently seeking new opportunities in
-            the field and would love to bring my expertise and passion for
-            frontend development to your team. Thank you for considering my
-            application. I look forward to the possibility of discussing how I
-            can contribute to your company.
+            I am a self-learner and frontend developer specializing in designing
+            and implementing user-friendly, responsive interfaces. My expertise
+            includes proficiency in React.js, Redux Toolkit, and Tailwind CSS. I
+            am passionate about leveraging my technical skills and attention to
+            detail to deliver impactful and innovative web solutions. Dedicated
+            to continuous learning, I stay updated with the latest industry
+            trends and best practices to enhance my development skills and
+            contribute effectively to team projects.
           </motion.p>
         </div>
       </div>

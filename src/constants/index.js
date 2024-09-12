@@ -7,6 +7,8 @@ import protopie from "../assets/collaboration/protopie.png";
 import raindrop from "../assets/collaboration/raindrop.png";
 import slack from "../assets/collaboration/slack.png";
 import Image1 from '../assets/Screenshot 2024-08-18 013513.png'
+import Expence_img_1 from '../assets/Project Image/Screenshot 2024-09-12 133631.png'
+import Expence_img_2 from '../assets/Project Image/Screenshot 2024-09-12 133659.png'
 
 export const collabText =
   "With expertise in modern frameworks and meticulous attention to detail, it's the perfect choice for businesses seeking a skilled frontend developer.";
@@ -90,62 +92,35 @@ export const collabApps = [
 export const ProjectData = [
   {
     "id": 1,
-    "projectName": "Weather App",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
-
-    "description": "A simple weather application that fetches data from an open weather API and displays the weather forecast for any location.",
-    "githubLink": "https://github.com/username/weather-app",
-    "liveLink": "https://weather-app-demo.com"
+    "projectName": "Expence Tracker",
+    "image1": Expence_img_1,
+    "image2": Expence_img_2,
+    "description": "I designed and developed a comprehensive expense tracker application using React.js, Tailwind CSS, and Chakra UI. The application allows users to easily add and categorize their expenses, boosting engagement and management. I implemented a shared expenses feature for collaborative management with friends and integrated a doughnut chart to provide users with visual insights into their spending habits. By applying responsive design principles, I ensured the application is mobile-friendly and accessible across various devices. The use of Chakra UI and Tailwind CSS enhanced the UI/UX, resulting in a visually appealing and user-friendly interface.",
+    "githubLink": "https://github.com/vinay8962/expense-tracker.git",
+    "liveLink": "https://Expence_tracker.com",
+    "language": ["React", "Redux Toolkit", "Redux Saga", "Tailwind Css", "Chakra Ui", "Chart Js"]
   },
   {
     "id": 2,
-    "projectName": "Task Manager",
+    "projectName": "E-library",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-
     "description": "A task management tool that helps users organize and track their daily tasks, with the ability to set reminders and mark tasks as complete.",
     "githubLink": "https://github.com/username/task-manager",
-    "liveLink": "https://task-manager-demo.com"
+    "liveLink": "https://task-manager-demo.com",
+    "language": ["JavaScript", "React", "Redux"]
   },
   {
     "id": 3,
     "projectName": "E-commerce Platform",
     "image1": Image1,
     "image2": "https://via.placeholder.com/150",
-
     "description": "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
     "githubLink": "https://github.com/username/ecommerce-platform",
-    "liveLink": "https://ecommerce-platform-demo.com"
+    "liveLink": "https://ecommerce-platform-demo.com",
+    "language": ["JavaScript", "React", "Node.js", "Express"]
   },
-  {
-    "id": 4,
-    "projectName": "Portfolio Website",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
 
-    "description": "A personal portfolio website to showcase projects and skills. It includes a contact form, project gallery, and resume download.",
-    "githubLink": "https://github.com/username/portfolio-website",
-    "liveLink": "https://portfolio-website-demo.com"
-  },
-  {
-    "id": 5,
-    "projectName": "E-commerce Platform",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
 
-    "description": "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
-    "githubLink": "https://github.com/username/ecommerce-platform",
-    "liveLink": "https://ecommerce-platform-demo.com"
-  },
-  {
-    "id": 6,
-    "projectName": "Portfolio Website",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
-
-    "description": "A personal portfolio website to showcase projects and skills. It includes a contact form, project gallery, and resume download.",
-    "githubLink": "https://github.com/username/portfolio-website",
-    "liveLink": "https://portfolio-website-demo.com"
-  }
 ]
+

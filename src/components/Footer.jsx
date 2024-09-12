@@ -22,7 +22,11 @@ const Footer = () => {
           transition={{ delay: 0 }} // No delay for the first icon
           className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaGithub className="text-white" /> {/* GitHub - Black */}
+          {/* GitHub - Black */}
+          <a href="https://github.com/vinay8962">
+            {" "}
+            <FaGithub className="text-white" />
+          </a>
         </motion.div>
 
         <motion.div
@@ -31,7 +35,9 @@ const Footer = () => {
           transition={{ delay: 0.2 }} // 0.2s delay for the second icon
           className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaDiscord className="text-[#7289DA]" /> {/* Discord - Blue */}
+          <a href="vinay9876_73254">
+            <FaDiscord className="text-[#7289DA]" /> {/* Discord - Blue */}
+          </a>
         </motion.div>
 
         <motion.div
@@ -40,7 +46,9 @@ const Footer = () => {
           transition={{ delay: 0.4 }} // 0.4s delay for the third icon
           className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaLinkedin className="text-[#0A66C2]" /> {/* LinkedIn - Blue */}
+          <a href="https://www.linkedin.com/in/vinay-kushwah-fe-dev/">
+            <FaLinkedin className="text-[#0A66C2]" /> {/* LinkedIn - Blue */}
+          </a>
         </motion.div>
 
         <motion.div
@@ -49,7 +57,9 @@ const Footer = () => {
           transition={{ delay: 0.6 }} // 0.6s delay for the fourth icon
           className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaTwitter className="text-[#1DA1F2]" /> {/* Twitter - Blue */}
+          <a href="https://x.com/VinayFEDev">
+            <FaTwitter className="text-[#1DA1F2]" /> {/* Twitter - Blue */}
+          </a>
         </motion.div>
 
         <motion.div
@@ -58,7 +68,9 @@ const Footer = () => {
           transition={{ delay: 0.8, duration: 0.3 }} // 0.8s delay for the fifth icon
           className="border border-gray-400 p-2 rounded-full cursor-pointer active:border-violet-500"
         >
-          <FaInstagram className="text-[#E1306C]" /> {/* Instagram - Pink */}
+          <a href="https://www.instagram.com/__v_i_n_a_y__06/">
+            <FaInstagram className="text-[#E1306C]" /> {/* Instagram - Pink */}
+          </a>
         </motion.div>
       </div>
     </div>
