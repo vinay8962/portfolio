@@ -63,7 +63,7 @@ const Project = () => {
 
       {/* Modal for showing project details */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center text-black overflow-hidden">
+        <div className="fixed inset-0 bg-black bg-opacity-50 opacity-100 flex justify-center items-center text-black overflow-hidden">
           <div className="bg-black text-white border border-violet-400 p-6 rounded-lg max-w-4xl h-auto w-full">
             <div className="w-full flex justify-end">
               <motion.button

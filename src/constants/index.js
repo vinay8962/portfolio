@@ -6,9 +6,11 @@ import photoshop from "../assets/collaboration/photoshop.png";
 import protopie from "../assets/collaboration/protopie.png";
 import raindrop from "../assets/collaboration/raindrop.png";
 import slack from "../assets/collaboration/slack.png";
-import Image1 from '../assets/Screenshot 2024-08-18 013513.png'
-import Expence_img_1 from '../assets/Project Image/Screenshot 2024-09-12 133631.png'
-import Expence_img_2 from '../assets/Project Image/Screenshot 2024-09-12 133659.png'
+import Image1 from "../assets/Screenshot 2024-08-18 013513.png";
+import Expence_img_1 from "../assets/Project Image/Screenshot 2024-09-12 133631.png";
+import Expence_img_2 from "../assets/Project Image/Screenshot 2024-09-12 133659.png";
+import Gym_fit_1 from "../assets/Project Image/Gym-fit-1.png";
+import Gym_fit_2 from "../assets/Project Image/Gym-fit-2.png";
 
 export const collabText =
   "With expertise in modern frameworks and meticulous attention to detail, it's the perfect choice for businesses seeking a skilled frontend developer.";
@@ -88,39 +90,56 @@ export const collabApps = [
   },
 ];
 
-
 export const ProjectData = [
   {
-    "id": 1,
-    "projectName": "Expence Tracker",
-    "image1": Expence_img_1,
-    "image2": Expence_img_2,
-    "description": "I designed and developed a comprehensive expense tracker application using React.js, Tailwind CSS, and Chakra UI. The application allows users to easily add and categorize their expenses, boosting engagement and management. I implemented a shared expenses feature for collaborative management with friends and integrated a doughnut chart to provide users with visual insights into their spending habits. By applying responsive design principles, I ensured the application is mobile-friendly and accessible across various devices. The use of Chakra UI and Tailwind CSS enhanced the UI/UX, resulting in a visually appealing and user-friendly interface.",
-    "githubLink": "https://github.com/vinay8962/expense-tracker.git",
-    "liveLink": "https://Expence_tracker.com",
-    "language": ["React", "Redux Toolkit", "Redux Saga", "Tailwind Css", "Chakra Ui", "Chart Js"]
+    id: 1,
+    projectName: "Expence Tracker",
+    image1: Expence_img_1,
+    image2: Expence_img_2,
+    description:
+      "I designed and developed a comprehensive expense tracker application using React.js, Tailwind CSS, and Chakra UI. The application allows users to easily add and categorize their expenses, boosting engagement and management. I implemented a shared expenses feature for collaborative management with friends and integrated a doughnut chart to provide users with visual insights into their spending habits. By applying responsive design principles, I ensured the application is mobile-friendly and accessible across various devices. The use of Chakra UI and Tailwind CSS enhanced the UI/UX, resulting in a visually appealing and user-friendly interface.",
+    githubLink: "https://github.com/vinay8962/expense-tracker.git",
+    liveLink: "https://Expence_tracker.com",
+    language: [
+      "React",
+      "Redux Toolkit",
+      "Redux Saga",
+      "Tailwind Css",
+      "Chakra Ui",
+      "Chart Js",
+    ],
   },
   {
-    "id": 2,
-    "projectName": "E-library",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
-    "description": "A task management tool that helps users organize and track their daily tasks, with the ability to set reminders and mark tasks as complete.",
-    "githubLink": "https://github.com/username/task-manager",
-    "liveLink": "https://task-manager-demo.com",
-    "language": ["JavaScript", "React", "Redux"]
+    id: 2,
+    projectName: "Gym-Fit",
+    image1: Gym_fit_1,
+    image2: Gym_fit_2,
+    description:
+      "I have developed a gym and fitness website featuring trainer profiles with their expertise and certifications, a timetable for class schedules to help users plan workouts, a blog section offering fitness tips and health advice, and detailed descriptions of courses to guide users in selecting the right training programs.",
+    githubLink: "https://github.com/vinay8962/gym_template.git",
+    liveLink: "https://gym-fit-8768.netlify.app/",
+    language: ["HTML", "CSS", "JavaScript"],
   },
   {
-    "id": 3,
-    "projectName": "E-commerce Platform",
-    "image1": Image1,
-    "image2": "https://via.placeholder.com/150",
-    "description": "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
-    "githubLink": "https://github.com/username/ecommerce-platform",
-    "liveLink": "https://ecommerce-platform-demo.com",
-    "language": ["JavaScript", "React", "Node.js", "Express"]
+    id: 3,
+    projectName: "E-library",
+    image1: Image1,
+    image2: "https://via.placeholder.com/150",
+    description:
+      "A task management tool that helps users organize and track their daily tasks, with the ability to set reminders and mark tasks as complete.",
+    githubLink: "https://github.com/username/task-manager",
+    liveLink: "https://task-manager-demo.com",
+    language: ["JavaScript", "React", "Redux"],
   },
-
-
-]
-
+  {
+    id: 4,
+    projectName: "E-commerce Platform",
+    image1: Image1,
+    image2: "https://via.placeholder.com/150",
+    description:
+      "An e-commerce platform that allows users to browse products, add them to the cart, and proceed with checkout. It includes payment integration and order tracking.",
+    githubLink: "https://github.com/username/ecommerce-platform",
+    liveLink: "https://ecommerce-platform-demo.com",
+    language: ["JavaScript", "React", "Node.js", "Express"],
+  },
+];
