@@ -11,6 +11,8 @@ import Expence_img_1 from "../assets/Project Image/Screenshot 2024-09-12 133631.
 import Expence_img_2 from "../assets/Project Image/Screenshot 2024-09-12 133659.png";
 import Gym_fit_1 from "../assets/Project Image/Gym-fit-1.png";
 import Gym_fit_2 from "../assets/Project Image/Gym-fit-2.png";
+import Real_Estate_1 from "../assets/Project Image/Real-estate-image.png";
+import Real_Estate_2 from "../assets/Project Image/Real-estate-image2.png";
 
 export const collabText =
   "With expertise in modern frameworks and meticulous attention to detail, it's the perfect choice for businesses seeking a skilled frontend developer.";
@@ -93,6 +95,17 @@ export const collabApps = [
 export const ProjectData = [
   {
     id: 1,
+    projectName: "Real Estate",
+    image1: Real_Estate_1,
+    image2: Real_Estate_2,
+    description:
+      "This real estate website template offers a sleek and responsive design, featuring animated property listings, detailed agent profiles, and interactive location maps. Built with React, Tailwind CSS, and Framer Motion, it provides smooth transitions, hover effects, and a clean UI for an engaging user experience. The template includes a property details page with high-quality images, pricing, descriptions, and contact forms, ensuring a seamless browsing experience across all devices. Perfect for showcasing luxury homes, apartments, and commercial properties, this modern design enhances user engagement and boosts property visibility. 🚀🏡",
+    githubLink: "https://github.com/vinay8962/real-estate-project.git",
+    liveLink: "https://real-estate-892.netlify.app/",
+    language: ["React", "Tailwind Css", "Framer Motion", "Json Data"],
+  },
+  {
+    id: 2,
     projectName: "Expence Tracker",
     image1: Expence_img_1,
     image2: Expence_img_2,
@@ -110,7 +123,7 @@ export const ProjectData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     projectName: "Gym-Fit",
     image1: Gym_fit_1,
     image2: Gym_fit_2,
@@ -121,7 +134,7 @@ export const ProjectData = [
     language: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: 3,
+    id: 4,
     projectName: "E-library",
     image1: Image1,
     image2: "https://via.placeholder.com/150",
@@ -132,7 +145,7 @@ export const ProjectData = [
     language: ["JavaScript", "React", "Redux"],
   },
   {
-    id: 4,
+    id: 5,
     projectName: "E-commerce Platform",
     image1: Image1,
     image2: "https://via.placeholder.com/150",
