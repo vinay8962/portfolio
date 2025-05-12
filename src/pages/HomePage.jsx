@@ -12,18 +12,40 @@ import Experience from "../components/Experience";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className="hero-section-bg-image">
+    <div className="scroll-smooth">
+      <div className="hero-section-bg-image" id="home">
         <Navbar />
         <Herosection />
       </div>
-      <About />
-      <Experience />
-      <Slide />
-      <Skills />
-      <Project />
-      <Collaboration />
-      <Contact />
+
+      <div id="about">
+        <About />
+      </div>
+
+      <div id="experience">
+        <Experience />
+      </div>
+
+      <div id="slide">
+        <Slide />
+      </div>
+
+      <div id="skills">
+        <Skills />
+      </div>
+
+      <div id="project">
+        <Project />
+      </div>
+
+      <div id="collaboration">
+        <Collaboration />
+      </div>
+
+      <div id="contact">
+        <Contact />
+      </div>
+
       <Footer />
     </div>
   );

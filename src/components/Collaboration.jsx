@@ -62,7 +62,7 @@ const Collaboration = () => {
               {collabApps.map((app, index) => (
                 <motion.li
                   key={app.id}
-                  className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
+                  className="absolute  top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
                   style={{
                     transform: `rotate(${
                       index * (360 / collabApps.length)

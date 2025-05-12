@@ -60,7 +60,7 @@ const Experience = () => {
             variants={cardVariants}
             className="border border-n-1/15 shadow-2xl shadow-n-1/15 p-6 rounded-lg shadow-md text-n-4 mb-8 w-full max-w-4xl"
           >
-            <div className="flex justify-between">
+            <div className="flex flex-col md:flex-row  justify-between">
               <div>
                 {" "}
                 <h2 className="text-2xl font-bold mb-2 text-gray-300">
@@ -68,7 +68,7 @@ const Experience = () => {
                 </h2>
                 <h3 className="text-xl font-medium mb-2">{exp.role}</h3>
               </div>
-              <p className="text-sm mb-2">
+              <p className="text-sm mb-2 text-gray-300">
                 {exp.start} - {exp.end}
               </p>
             </div>
