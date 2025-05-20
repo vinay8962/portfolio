@@ -57,6 +57,16 @@ const Navbar = () => {
                 <a href={`#${item.id}`}>{item.label}</a>
               </motion.li>
             ))}
+            <li>
+              <button
+                onClick={() =>
+                  window.open("https://github.com/vinay8962", "_blank")
+                }
+                className="px-3 py-1 border text-white  h rounded-2xl hover:bg-violet-700 transition"
+              >
+                GitHub Profile
+              </button>
+            </li>
           </motion.ul>
 
           {/* Mobile Menu Toggle Button */}

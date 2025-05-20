@@ -10,7 +10,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 const Herosection = () => {
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1lTLlyXav1Fz9Y822651KD6eFPV2eC-b3/view?usp=sharing",
+      "https://drive.google.com/file/d/1BvsP4RsTzKDBzrL6qN6vwkVUaqgddCmO/view?usp=sharing",
       "_blank"
     );
   };
