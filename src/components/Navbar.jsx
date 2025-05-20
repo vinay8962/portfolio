@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdOutlineDensityMedium } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => window.removeEventListener("scroll", controlNavbar);
-  }, [lastScrollY]);
+  }, [controlNavbar]);
 
   const menuItems = [
     { label: "Home", id: "home" },
@@ -62,7 +62,7 @@ const Navbar = () => {
                 onClick={() =>
                   window.open("https://github.com/vinay8962", "_blank")
                 }
-                className="px-3 py-1 border text-white  h rounded-2xl hover:bg-violet-700 transition"
+                className="px-3 py-1 border text-white  rounded-2xl hover:bg-violet-700 transition"
               >
                 GitHub Profile
               </button>

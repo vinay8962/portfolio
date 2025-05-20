@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -58,11 +57,10 @@ const Experience = () => {
             initial="hidden"
             whileInView="visible"
             variants={cardVariants}
-            className="border border-n-1/15 shadow-2xl shadow-n-1/15 p-6 rounded-lg shadow-md text-n-4 mb-8 w-full max-w-4xl"
+            className="border border-n-1/15 shadow-2xl shadow-n-1/15 p-6 rounded-lg  text-n-4 mb-8 w-full max-w-4xl"
           >
             <div className="flex flex-col md:flex-row  justify-between">
               <div>
-                {" "}
                 <h2 className="text-2xl font-bold mb-2 text-gray-300">
                   {exp.company}
                 </h2>

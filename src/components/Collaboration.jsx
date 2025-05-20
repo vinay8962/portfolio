@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import brainwaveSymbol from "../assets/brainwave-symbol.svg";
 import check from "../assets/check.svg";
-
-import { collabApps, collabContent, collabText } from "../constants";
-// import Button from "./Button";
+import { collabApps, collabContent } from "../constants";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 

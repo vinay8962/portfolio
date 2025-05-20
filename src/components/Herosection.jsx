@@ -1,10 +1,8 @@
-import React from "react";
 import Profile_BG from "../assets/pngegg.png";
 import Profile from "../assets/Screenshot 2024-08-18 013513.png";
 import { motion } from "framer-motion";
 import TypingText from "./TypingText";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
-import { LuContact } from "react-icons/lu";
 import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Herosection = () => {
