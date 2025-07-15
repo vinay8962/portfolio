@@ -101,7 +101,7 @@ export const ProjectData = [
     image1: Dr_appointment_1,
     image2: Dr_appointment_2,
     description:
-      "This real estate website template offers a sleek and responsive design, featuring animated property listings, detailed agent profiles, and interactive location maps. Built with React, Tailwind CSS, and Framer Motion, it provides smooth transitions, hover effects, and a clean UI for an engaging user experience. The template includes a property details page with high-quality images, pricing, descriptions, and contact forms, ensuring a seamless browsing experience across all devices. Perfect for showcasing luxury homes, apartments, and commercial properties, this modern design enhances user engagement and boosts property visibility. 🚀🏡",
+      "The Doctor Appointment Booking System allows users to register, log in, view available doctors, and book appointments based on date and time. Users can also view, cancel, or track the status of their appointments. Doctors can create accounts, log in, view upcoming bookings, and mark appointments as completed or canceled. Both users and doctors have separate dashboards to manage their interactions. The system uses secure authentication and maintains appointment statuses like pending, completed, and canceled. This system simplifies the scheduling process, ensures better communication between patients and doctors, and enhances the overall efficiency of managing medical consultations.",
     githubLink:
       "https://github.com/vinay8962/dr_appointment_booking_frontend.git",
     liveLink: "dr-appointment-booking.netlify.app",
