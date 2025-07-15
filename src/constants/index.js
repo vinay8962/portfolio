@@ -104,7 +104,7 @@ export const ProjectData = [
       "The Doctor Appointment Booking System allows users to register, log in, view available doctors, and book appointments based on date and time. Users can also view, cancel, or track the status of their appointments. Doctors can create accounts, log in, view upcoming bookings, and mark appointments as completed or canceled. Both users and doctors have separate dashboards to manage their interactions. The system uses secure authentication and maintains appointment statuses like pending, completed, and canceled. This system simplifies the scheduling process, ensures better communication between patients and doctors, and enhances the overall efficiency of managing medical consultations.",
     githubLink:
       "https://github.com/vinay8962/dr_appointment_booking_frontend.git",
-    liveLink: "dr-appointment-booking.netlify.app",
+    liveLink: "https://dr-appointment-booking.netlify.app",
     language: [
       "React",
       "Tailwind Css",
