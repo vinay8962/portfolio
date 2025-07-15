@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { MdOutlineDensityMedium } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 
@@ -12,15 +12,14 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
-  const controlNavbar = () => {
+  const controlNavbar = useCallback(() => {
     if (window.scrollY < lastScrollY) {
-      setShowNavbar(true); // Scrolling up
+      setShowNavbar(true);
     } else {
-      setShowNavbar(false); // Scrolling down
+      setShowNavbar(false);
     }
     setLastScrollY(window.scrollY);
-  };
-
+  }, [lastScrollY]);
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => window.removeEventListener("scroll", controlNavbar);

@@ -22,10 +22,3 @@ const ProjectCard = ({ project, onCardClick }) => {
 
 export default ProjectCard;
 
-{
-  /* <img
-          src={project.image1}
-          alt={project.projectName}
-          className="w-full h-32 object-cover mb-4"
-        /> */
-}
