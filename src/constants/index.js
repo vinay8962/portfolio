@@ -113,6 +113,10 @@ export const ProjectData = [
       "MongoDB",
       "Json Data",
     ],
+    featured: true,
+    stars: 120,
+    forks: 45,
+    views: 1500,
   },
   {
     id: 2,
@@ -124,6 +128,10 @@ export const ProjectData = [
     githubLink: "https://github.com/vinay8962/real-estate-project.git",
     liveLink: "https://real-estate-892.netlify.app/",
     language: ["React", "Tailwind Css", "Framer Motion", "Json Data"],
+    featured: false,
+    stars: 80,
+    forks: 30,
+    views: 900,
   },
   {
     id: 3,
@@ -142,6 +150,10 @@ export const ProjectData = [
       "Chakra Ui",
       "Chart Js",
     ],
+    featured: true,
+    stars: 200,
+    forks: 60,
+    views: 2500,
   },
   {
     id: 4,
@@ -153,6 +165,10 @@ export const ProjectData = [
     githubLink: "https://github.com/vinay8962/gym_template.git",
     liveLink: "https://gym-fit-8768.netlify.app/",
     language: ["HTML", "CSS", "JavaScript"],
+    featured: false,
+    stars: 55,
+    forks: 20,
+    views: 700,
   },
   {
     id: 5,

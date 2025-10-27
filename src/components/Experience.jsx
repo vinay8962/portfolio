@@ -4,52 +4,59 @@ const experiences = [
   {
     company: "Techieshubhdeep IT Pvt Ltd",
     role: "Frontend Developer",
-    start: "Sept. 2023",
+    start: "Sept 2023",
     end: "Jun 2024",
     description:
-      "Developed and maintained features for a school management system, worked on an e-commerce website, contributed to the company website, and collaborated with cross-functional teams.",
+      "Built and maintained key features for a school management system, e-commerce website, and the company portfolio. Collaborated with cross-functional teams to deliver responsive, high-quality web applications.",
   },
 ];
 
 const Experience = () => {
-  // Variants for the motion cards
   const cardVariants = {
     hidden: { opacity: 0, y: 100 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.3, // Delay for each card
+        delay: i * 0.3,
         duration: 0.6,
+        ease: "easeOut",
       },
     }),
   };
 
   return (
-    <div className="bg-n-8 w-full h-auto overflow-hidden">
-      <div className="bg-n-8 flex flex-col items-center">
-        <motion.h1
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 1 }}
-          className="text-1xl sm:text-4xl font-bold text-white tracking-wide my-10 text-center"
+    <section className="bg-[#090c11] py-20 px-6 text-white">
+      {/* Section Heading */}
+      <div className="text-center mb-10">
+        <h2 className="text-4xl sm:text-5xl mb-8 font-bold bg-[#5d79f3] text-transparent bg-clip-text">
+          Experience
+        </h2>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex items-center justify-center gap-4 mb-8"
         >
-          <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-          Experience{" "}
-          <span className="inline-block sm:w-24 w-12 h-[0.5px] bg-red-500 font-thin"></span>{" "}
-        </motion.h1>
+          <div className="w-16 h-1 bg-gradient-to-r from-transparent to-blue-500 rounded-full" />
+          <div className="w-8 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
+          <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-transparent rounded-full" />
+        </motion.div>{" "}
       </div>
-      <div className="flex flex-col items-center w-full px-8">
-        <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
+
+      {/* Subtitle */}
+      <div className="text-center mb-12">
+        <p className="text-2xl sm:text-3xl font-semibold mb-2">
           Working Since 2023
         </p>
-        <p className="text-sm md:text-base text-gray-50 mb-4 tracking-wide">
-          Nurturing Growth and Learning - My Journey of Gaining Professional
-          Experience Since Freshman Year in College
+        <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
+          Nurturing growth and learning — my journey of gaining hands-on
+          experience since my early college years.
         </p>
       </div>
 
-      <div className="flex flex-col items-center w-full px-8">
+      {/* Experience Card */}
+      <div className="flex flex-col items-center">
         {experiences.map((exp, i) => (
           <motion.div
             key={i}
@@ -57,26 +64,26 @@ const Experience = () => {
             initial="hidden"
             whileInView="visible"
             variants={cardVariants}
-            className="border border-n-1/15 shadow-2xl shadow-n-1/15 p-6 rounded-lg  text-n-4 mb-8 w-full max-w-4xl"
+            viewport={{ once: true }}
+            className="w-full max-w-4xl bg-[#131822] border border-white/10 rounded-xl shadow-md p-6 mb-8"
           >
-            <div className="flex flex-col md:flex-row  justify-between">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
               <div>
-                <h2 className="text-2xl font-bold mb-2 text-gray-300">
+                <h3 className="text-xl font-semibold text-white">
                   {exp.company}
-                </h2>
-                <h3 className="text-xl font-medium mb-2">{exp.role}</h3>
+                </h3>
+                <p className="text-lg text-[#1ab7e3]">{exp.role}</p>
               </div>
-              <p className="text-sm mb-2 text-gray-300">
+              <span className="text-sm text-gray-400 mt-2 md:mt-0">
                 {exp.start} - {exp.end}
-              </p>
+              </span>
             </div>
-            <p className="text-n-4 text-center">{exp.description}</p>
+            <p className="text-gray-300 leading-relaxed">{exp.description}</p>
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Experience;
-

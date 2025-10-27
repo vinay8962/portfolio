@@ -1,9 +1,9 @@
 import Profile_BG from "../assets/pngegg.png";
 import Profile from "../assets/Screenshot 2024-08-18 013513.png";
 import { motion } from "framer-motion";
-import TypingText from "./TypingText";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { Sparkles } from "lucide-react";
 
 const Herosection = () => {
   const handleResumeClick = () => {
@@ -12,72 +12,85 @@ const Herosection = () => {
       "_blank"
     );
   };
-  return (
-    <div className=" flex flex-col md:flex-row w-full h-[650px]  overflow-hidden ">
-      <div className="text-white flex-1 flex flex-col items-center justify-center m-10">
-        <h1 className="sm:text-1xl text-xs  font-semibold p-1 bg-gray-300  text-black mb-4 tracking-widest">
-          <TypingText text="Hello There Welcome To My Portfolio" />
-        </h1>
 
+  return (
+    <div
+      className="flex flex-col-reverse md:flex-row w-full min-h-screen items-center justify-between px-6 sm:px-12 lg:px-20 py-12 gap-12"
+      id="home"
+    >
+      {/* Left Section */}
+      <div className="text-white flex-1 flex flex-col items-center md:items-start justify-center space-y-6">
+        {/* Welcome Tag */}
+        <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-md border border-cyan-500/30 rounded-full px-4 py-2">
+          <Sparkles className="w-4 h-4 text-cyan-400" />
+          <span className="text-cyan-300 text-sm font-medium">
+            Hello, Welcome to my Portfolio
+          </span>
+        </div>
+
+        {/* Heading */}
         <motion.h1
-          initial={{ y: -100, opacity: 0, scale: 0.5 }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5 }}
-          className="sm:text-6xl text-4xl font-semibold font-sans tracking-widest"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-center md:text-left"
         >
           I<span className="text-red-500">'m</span> Vinay Kushwah
         </motion.h1>
+
+        {/* Sub-heading */}
         <motion.h2
-          initial={{ y: -100, opacity: 0, scale: 0.5 }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5 }}
-          className="sm:text-4xl text-2xl my-4 tracking-widest text-red-500"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          className="text-lg sm:text-2xl lg:text-3xl text-red-500 tracking-wide text-center md:text-left"
         >
           A Frontend Developer
         </motion.h2>
 
+        {/* Buttons */}
         <motion.div
-          className="sm:flex gap-3"
-          initial={{ y: -100, opacity: 0, scale: 0.5 }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5 }}
+          className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.4 }}
         >
           <motion.button
-            className=" flex items-center relative mt-4 px-6 py-2  gap-2 bg-transparent border-red-500 border-2   text-white rounded-full
-             "
+            className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-red-500 text-white rounded-full hover:bg-red-500/20 transition duration-300"
             onClick={handleResumeClick}
           >
-            Show my Resume <HiOutlineDocumentArrowDown />
+            Show my Resume <HiOutlineDocumentArrowDown className="w-5 h-5" />
           </motion.button>
+
           <motion.a
             href="https://wa.me/918962017022"
-            className="relative flex items-center gap-2 mt-4 px-6 py-2 text-white rounded-full 
-            bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500
-            before:absolute before:inset-0 before:rounded-full 
-            before:bg-transparent before:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
-            before:z-[-1] before:blur-md before:mask border-transparent"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-green-500 text-white rounded-full hover:bg-green-500/20 transition duration-300"
           >
-            Contact Me <IoLogoWhatsapp />
+            Contact Me <IoLogoWhatsapp className="w-5 h-5" />
           </motion.a>
         </motion.div>
       </div>
-      <div className="flex-1 flex items-center justify-center relative ">
+
+      {/* Right Section - Image */}
+      <div className="flex-1 flex items-center justify-center relative">
+        {/* Rotating BG */}
         <motion.img
           src={Profile_BG}
-          className="absolute w-8/12 md:w-1/2 object-cover rounded-full"
+          className="absolute w-64 sm:w-72 md:w-80 lg:w-96 object-cover rounded-full opacity-80"
           alt="Profile Background"
           animate={{ rotate: [0, 360] }}
           transition={{
             repeat: Infinity,
-            duration: 20,
+            duration: 30,
             ease: "linear",
           }}
         />
+        {/* Profile */}
         <img
           src={Profile}
-          className=" w-36 h-36 md:w-72 md:h-72 rounded-full "
+          className="w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white shadow-xl relative z-10"
           alt="Profile"
         />
       </div>
